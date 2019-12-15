@@ -7,21 +7,22 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
-Plug 'ycm-core/YouCompleteMe', { 'do': 'python3 install.py --clangd-completer' }
+"Plug 'ycm-core/YouCompleteMe', { 'do': 'python3 install.py --clangd-completer' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-signify'
 Plug 'Shougo/denite.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/tmuxline.vim'
-Plug 'edkolev/promptline.vim'
+"Plug 'edkolev/tmuxline.vim'
+"Plug 'edkolev/promptline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-scripts/ScrollColors'
 Plug 'spf13/vim-colors'
 Plug 'jdsimcoe/panic.vim'
 Plug 'Mcmartelle/vim-monokai-bold'
+Plug 'pragmaticarun/turbocpp.vim'
 call plug#end()
 
 set nocompatible
@@ -91,6 +92,10 @@ set background=dark
 
 set splitbelow
 set splitright
+set cc=80
+
+
+color turbocpp
 " Tabs
 nnoremap <Leader>pt :tabprev<CR>
 nnoremap <Leader>nt :tabnext<CR>
@@ -130,5 +135,5 @@ let g:NERDTreeIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
-
-color molokai
+"Airline
+let g:airline_theme='turbocpp'
