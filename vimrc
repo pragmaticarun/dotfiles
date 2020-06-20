@@ -23,6 +23,7 @@ Plug 'spf13/vim-colors'
 Plug 'jdsimcoe/panic.vim'
 Plug 'Mcmartelle/vim-monokai-bold'
 Plug 'pragmaticarun/turbocpp.vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 set nocompatible
